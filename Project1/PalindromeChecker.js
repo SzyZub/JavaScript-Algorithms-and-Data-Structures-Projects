@@ -4,7 +4,6 @@ function palindrome (string) {
         .trim()
         .replaceAll(/[^a-zA-Z0-9]/g, "")
         .toLowerCase();
-    console.log(modsr);
     for (let i = 0; i < (Math.floor(modsr.length / 2)); i++){
         if (modsr.charCodeAt(i) != modsr.charCodeAt(modsr.length - i - 1)) {
             return false;
